@@ -66,6 +66,41 @@ a:hover {
   cursor: default;
 }
 
+/* FIXED & TRANSPARENT NAVBAR */
+
+#desktop-nav,
+#hamburger-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  background: rgba(255, 255, 255, 0.15); /* transparent */
+  backdrop-filter: blur(10px); /* glass effect */
+  -webkit-backdrop-filter: blur(10px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Reduce height little */
+nav {
+  height: 12vh;
+}
+
+/* Add spacing so content doesn't go under navbar */
+body {
+  padding-top: 12vh;
+}
+
+a {
+  color: #222;
+}
+
+.logo {
+  color: #111;
+}
+
+
 /* HAMBURGER MENU */
 
 #hamburger-nav {
